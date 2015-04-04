@@ -4,6 +4,4 @@ angular
 
 function LoginController() {
 
-
-
 }
