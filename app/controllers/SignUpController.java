@@ -1,6 +1,7 @@
 package controllers;
 
 import play.*;
+import play.libs.Json;
 import play.mvc.*;
 
 import play.mvc.BodyParser;
@@ -15,6 +16,6 @@ public class SignUpController extends Controller {
     String email = body.get("email").asText();
     String password = body.get("password").asText();
 
-    return ok("Looks good to me!");
+    return ok(Json.toJson("Looks good to me!"));
   }
 }
