@@ -11,10 +11,11 @@
   <body>
 
     <div ng-controller="LoginController as ctl">
+      <h3>Login</h3>
       <form>
         Email: <br/> <input ng-model="ctl.formEmail" type="text" name="email"> <br />
-        Password: <br/> <input ng-model="ctl.formPassword" type="text" name="password"><br />
-        <input ng-click="ctl.submitForm()" type="submit" value="Submit">
+        Password: <br/> <input ng-model="ctl.formPassword" type="password" name="password"><br />
+        <input ng-click="ctl.submitForm()" type="submit" value="Submit"> {{ ctl.loginReturnValue }}
       </form>
 
       <a ng-click="ctl.logout()" href="#">Logout</a>

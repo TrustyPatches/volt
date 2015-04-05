@@ -15,13 +15,17 @@ angular.module('app', []);
         // Fields
         vm.formEmail = "";
         vm.formPassword = "";
+        vm.loginReturnValue = false;
 
         // Functions
         vm.submitForm = submitForm;
         vm.logout = logout;
 
         function submitForm() {
-            $http.post('api/login', { 'email': vm.formEmail, 'password': vm.formPassword });
+            $http.post('api/login', { 'email': vm.formEmail, 'password': vm.formPassword })
+                .success(function(data) {
+                    vm.loginReturnValue = data;
+                });
         }
 
         function logout() {
@@ -54,5 +58,20 @@ angular.module('app', []);
         function submitForm() {
             $http.post('api/signup', { 'email': vm.formEmail, 'password': vm.formPassword });
         };
+    }
+})();
+
+(function () {
+    'use strict';
+
+    angular
+        .module('app')
+        .controller('ProfileController', ProfileController);
+
+    ProfileController.$inject = ['$http'];
+
+    function ProfileController($http) {
+        var vm = this;
+
     }
 })();

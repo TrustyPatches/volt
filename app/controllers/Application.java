@@ -19,4 +19,6 @@ public class Application extends Controller {
     return ok(login.render());
   }
 
+  public static Result profile() { return ok(profile.render()); }
+
 }

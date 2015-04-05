@@ -13,13 +13,17 @@
         // Fields
         vm.formEmail = "";
         vm.formPassword = "";
+        vm.loginReturnValue = false;
 
         // Functions
         vm.submitForm = submitForm;
         vm.logout = logout;
 
         function submitForm() {
-            $http.post('api/login', { 'email': vm.formEmail, 'password': vm.formPassword });
+            $http.post('api/login', { 'email': vm.formEmail, 'password': vm.formPassword })
+                .success(function(data) {
+                    vm.loginReturnValue = data;
+                });
         }
 
         function logout() {

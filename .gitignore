@@ -16,4 +16,5 @@ server.pid
 /dist/
 .cache
 node_modules/
+conf/evolutions/
 .idea/workspace.xml

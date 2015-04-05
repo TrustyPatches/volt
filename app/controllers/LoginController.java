@@ -1,5 +1,6 @@
 package controllers;
 
+import models.User;
 import play.*;
 import play.libs.Json;
 import play.mvc.*;
@@ -11,15 +12,22 @@ public class LoginController extends Controller {
 
   @BodyParser.Of(BodyParser.Json.class)
   public static Result login() {
-
-    JsonNode body = request().body().asJson(); // Grab the body of the request as Json.
+    JsonNode body = request().body().asJson();
     String email = body.get("email").asText();
     String password = body.get("password").asText();
 
-    return ok(Json.toJson("Logged in!"));
+    User u = User.find.where().eq("email", email).findUnique();
+    System.out.println(u.password);
+    if (u != null && u.password.equals(password)) {
+      session("username", email);
+      return ok(Json.toJson(true));
+    } else {
+      return ok(Json.toJson(false));
+    }
   }
 
   public static Result logout() {
-    return ok(Json.toJson("Logged out succesfully"));
+    session().clear();
+    return ok();
   }
 }

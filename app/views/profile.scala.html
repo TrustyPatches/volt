@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Sign Up</title>
+    <title>Profile</title>
 
     <link rel="stylesheet" type="text/css" href="@routes.Assets.at("bower_components/bootstrap/dist/css/bootstrap.min.css")">
     <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/main.css")">
@@ -10,14 +10,10 @@
 
   <body>
 
-    <div ng-controller="SignUpController as ctl">
-      <h3>Register</h3>
-    <form>
-        Email: <br/> <input ng-model="ctl.formEmail" type="text" name="email"> {{ ctl.formEmail }} <br />
-        Password: <br/> <input ng-model="ctl.formPassword" type="text" name="password"><br />
-        Password again: <br /> <input ng-model="ctl.formPasswordRepeat" type="text" name="password-repeat"><br />
-        <input ng-click="ctl.submitForm()" type="submit" value="Submit">
-      </form>
+    <div ng-controller="ProfileController as ctl">
+      <h3>Profile</h3>
+
+
     </div>
 
 
