@@ -1,7 +1,14 @@
-angular
-  .module('app')
-  .controller('LoginController', LoginController);
+(function() {
+  'use strict';
 
-function LoginController() {
+  angular
+    .module('app')
+    .controller('LoginController', LoginController);
 
-}
+  LoginController.$inject = [];
+  
+  function LoginController() {
+    var vm = this;
+
+  }
+})();

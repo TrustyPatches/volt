@@ -1,17 +1,40 @@
-angular.module('app', [ngRoute]);
+angular.module('app', []);
 
-angular
-  .module('app')
-  .controller('LoginController', LoginController);
+(function() {
+  'use strict';
 
-function LoginController() {
+  angular
+    .module('app')
+    .controller('LoginController', LoginController);
 
-}
+  LoginController.$inject = [];
+  
+  function LoginController() {
+    var vm = this;
 
-angular
-  .module('app')
-  .controller('SignupController', SignUpController);
+  }
+})();
 
-function SignUpController() {
+(function () {
+    angular
+        .module('app')
+        .controller('SignUpController', SignUpController);
 
-}
+    SignUpController.$inject = ['$http'];
+
+    function SignUpController($http) {
+        var vm = this;
+
+        vm.firstName = "Boogaloo";
+
+        vm.formEmail = "";
+        vm.formPassword = "";
+        vm.formPasswordRepeat = "";
+
+        vm.submitForm = submitForm;
+
+        function submitForm() {
+            $http.post('api/signup', { 'email': vm.formEmail, 'password': vm.formPassword });
+        }
+    }
+})();
