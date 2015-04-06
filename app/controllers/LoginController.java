@@ -1,7 +1,6 @@
 package controllers;
 
-import models.User;
-import play.*;
+import models.VoltUser;
 import play.libs.Json;
 import play.mvc.*;
 
@@ -16,7 +15,7 @@ public class LoginController extends Controller {
     String email = body.get("email").asText();
     String password = body.get("password").asText();
 
-    User u = User.find.where().eq("email", email).findUnique();
+    VoltUser u = VoltUser.find.where().eq("username", email).findUnique();
     System.out.println(u.password);
     if (u != null && u.password.equals(password)) {
       session("username", email);
@@ -24,6 +23,14 @@ public class LoginController extends Controller {
     } else {
       return ok(Json.toJson(false));
     }
+  }
+
+  public static Result isLoggedIn() {
+    return ok(Json.toJson(session("username") != null));
+  }
+
+  public static Result getUsername() {
+    return ok(Json.toJson((session("username") != null) ? session("username") : ""));
   }
 
   public static Result logout() {

@@ -1,16 +1,20 @@
 package core;
 
 import com.avaje.ebean.Ebean;
+import core.authentication.VoltRole;
 import play.*;
-import models.User;
+import models.VoltUser;
 
 public class Global extends GlobalSettings {
 
   public void onStart(Application app) {
 
-    if (User.find.all().size() == 0) {
-      User testUser = new User("test@test.com", "password");
+    if (VoltUser.find.all().size() == 0) {
+      VoltUser testUser = new VoltUser("test@test.com", "password", VoltRole.VOLUNTEER);
       Ebean.save(testUser);
+
+      VoltUser testLeader = new VoltUser("testleader@test.com", "password", VoltRole.GROUP_LEADER);
+      Ebean.save(testLeader);
     }
   }
 

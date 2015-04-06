@@ -16,4 +16,5 @@ POST        /api/signup             controllers.SignUpController.signUp()
 POST        /api/login              controllers.LoginController.login()
 POST        /api/logout             controllers.LoginController.logout()
 
-#GET          /api/profile/
+GET         /api/profile/loggedin   controllers.LoginController.isLoggedIn()
+GET         /api/profile/username   controllers.LoginController.getUsername()

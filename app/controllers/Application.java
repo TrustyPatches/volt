@@ -2,6 +2,8 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
+import core.authentication.RestrictToRegisteredAction.*;
+import core.authentication.RestrictToRoleAction.*;
 
 import views.html.*;
 
@@ -19,6 +21,7 @@ public class Application extends Controller {
     return ok(login.render());
   }
 
+  @RestrictToRole(roles = "GROUP_LEADER") // For test purposes only, should be restrict to registered
   public static Result profile() { return ok(profile.render()); }
 
 }
