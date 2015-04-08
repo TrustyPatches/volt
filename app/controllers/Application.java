@@ -21,7 +21,10 @@ public class Application extends Controller {
     return ok(login.render());
   }
 
-  @RestrictToRole(roles = "GROUP_LEADER") // For test purposes only, should be restrict to registered
+  @RestrictToRegistered
   public static Result profile() { return ok(profile.render()); }
+
+  @RestrictToRole(roles = "ADMINISTRATION")
+  public static Result users() { return ok(users.render()); }
 
 }
