@@ -1,6 +1,8 @@
 package core.authentication;
 
+import controllers.Assets;
 import models.VoltUser;
+import play.Play;
 import play.mvc.Http;
 import play.mvc.Result;
 import play.mvc.Results;
@@ -9,8 +11,10 @@ import static play.mvc.Controller.session;
 
 public class Authenticator extends Results {
 
+  public static final String UNAUTHORIZED_PAGE = "public/app/components/authentication/unauthorized.html";
+
   public static Result onUnauthorized(Http.Context ctx) {
-    return unauthorized(views.html.unauthorized.render());
+    return unauthorized(Play.application().getFile(UNAUTHORIZED_PAGE), true);
   }
 
   public static boolean isLoggedIn() {

@@ -23,5 +23,4 @@ public class UserController extends Controller {
             .collect(Collectors.toList());
     return ok(Json.toJson(names));
   }
-
 }
