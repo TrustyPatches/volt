@@ -1,5 +1,6 @@
 package core.authentication;
 
+import controllers.Application;
 import controllers.Assets;
 import models.VoltUser;
 import play.Play;
@@ -11,10 +12,8 @@ import static play.mvc.Controller.session;
 
 public class Authenticator extends Results {
 
-  public static final String UNAUTHORIZED_PAGE = "public/app/components/authentication/unauthorized.html";
-
   public static Result onUnauthorized(Http.Context ctx) {
-    return unauthorized(Play.application().getFile(UNAUTHORIZED_PAGE), true);
+    return Application.errorPage(403, "You are not authorized to access this page");
   }
 
   public static boolean isLoggedIn() {

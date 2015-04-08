@@ -8,6 +8,8 @@ import core.authentication.RestrictToRoleAction.*;
 
 import views.html.*;
 
+import java.io.File;
+
 public class Application extends Controller {
 
   public static final String COMPONENT_VIEWS = "public/app/components/";
@@ -45,16 +47,22 @@ public class Application extends Controller {
       filePath = (component) ? COMPONENT_VIEWS + filePath : SHARED_VIEWS + filePath;
       return ok(Play.application().getFile(filePath), true);
     } catch (Exception e) {
-      return errorPage("notfound.html", 404, e.getMessage());
+      return errorPage(404, e.getMessage());
     }
   }
 
-  private static Result errorPage(String filePath, int errorCode, String errorMessage) {
+  public static Result errorPage(int errorCode, String errorMessage) {
     switch (errorCode) {
       case (404):
-        return notFound(Play.application().getFile(ERROR_VIEWS + filePath), true);
+        return notFound(resolveErrorPage("notfound.html"), true);
+      case (403):
+        return unauthorized(resolveErrorPage("unauthorized.html"), true);
       default:
         return internalServerError();
     }
+  }
+
+  private static File resolveErrorPage(String filePath) {
+    return Play.application().getFile(ERROR_VIEWS + filePath);
   }
 }
