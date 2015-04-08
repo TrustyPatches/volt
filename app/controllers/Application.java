@@ -1,6 +1,6 @@
 package controllers;
 
-import play.*;
+import core.authentication.VoltRole;
 import play.mvc.*;
 import core.authentication.RestrictToRegisteredAction.*;
 import core.authentication.RestrictToRoleAction.*;
@@ -24,7 +24,6 @@ public class Application extends Controller {
   @RestrictToRegistered
   public static Result profile() { return ok(profile.render()); }
 
-  @RestrictToRole(roles = "ADMINISTRATION")
+  @RestrictToRole({ VoltRole.ADMINISTRATOR })
   public static Result users() { return ok(users.render()); }
-
 }

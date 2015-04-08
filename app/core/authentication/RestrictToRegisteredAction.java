@@ -13,11 +13,12 @@ import java.lang.annotation.Target;
 public class RestrictToRegisteredAction extends play.mvc.Action.Simple {
 
   public F.Promise<Result> call(Http.Context ctx) throws Throwable {
-    if (!Authenticator.isLoggedIn()) {
+    System.out.println("Checking if registered");
+    if (Authenticator.isLoggedIn() && Authenticator.isRegistered()) {
+      return delegate.call(ctx);
+    } else {
       Result unauthorized = Authenticator.onUnauthorized(ctx);
       return F.Promise.pure(unauthorized);
-    } else {
-      return delegate.call(ctx);
     }
   }
 

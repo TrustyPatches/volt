@@ -13,8 +13,14 @@ public class Global extends GlobalSettings {
       VoltUser testUser = new VoltUser("test@test.com", "password", VoltRole.VOLUNTEER);
       Ebean.save(testUser);
 
-      VoltUser testLeader = new VoltUser("testleader@test.com", "password", VoltRole.GROUP_LEADER);
-      Ebean.save(testLeader);
+      VoltUser testTeamLeader = new VoltUser("teamleader@test.com", "password", VoltRole.TEAM_LEADER);
+      Ebean.save(testTeamLeader);
+
+      VoltUser testGroupLeader = new VoltUser("groupleader@test.com", "password", VoltRole.GROUP_LEADER);
+      Ebean.save(testGroupLeader);
+
+      VoltUser testAdmin = new VoltUser("admin@test.com", "password", VoltRole.ADMINISTRATOR);
+      Ebean.save(testAdmin);
     }
   }
 
