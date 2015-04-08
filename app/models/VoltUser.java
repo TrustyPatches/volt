@@ -29,10 +29,13 @@ public class VoltUser extends Model implements User {
 
   public VoltUser(String email, String password, VoltRole role) {
     this.username = email;
-    this.email = email; // In this implementation, usernames must be an email
+    this.email = email; // TODO: usernames must be an email (should be made optional)
     this.password = password;
     this.role = role;
     this.chapter = "testchapter";
+    this.ring = "testring";
+    this.firstName = "Mr Test";
+    this.lastName = "McTesterson";
   }
 
   public String getFullName() {
