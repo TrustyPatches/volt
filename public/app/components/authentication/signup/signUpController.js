@@ -11,7 +11,7 @@
         var vm = this;
 
         // Fields
-        vm.formEmail = "";
+        vm.formUsername = "";
         vm.formPassword = "";
         vm.formPasswordRepeat = "";
 
@@ -19,7 +19,7 @@
         vm.submitForm = submitForm;
 
         function submitForm() {
-            $http.post('api/signup', { 'email': vm.formEmail, 'password': vm.formPassword });
+            $http.post('api/signup', { 'username': vm.formUsername, 'password': vm.formPassword });
         };
     }
 })();

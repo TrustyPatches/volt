@@ -13,7 +13,7 @@
     <div ng-controller="SignUpController as ctl">
       <h3>Register</h3>
     <form>
-        Email: <br/> <input ng-model="ctl.formEmail" type="text" name="email"> {{ ctl.formEmail }} <br />
+        Email: <br/> <input ng-model="ctl.formUsername" type="text" name="username"> {{ ctl.formUsername }} <br />
         Password: <br/> <input ng-model="ctl.formPassword" type="text" name="password"><br />
         Password again: <br /> <input ng-model="ctl.formPasswordRepeat" type="text" name="password-repeat"><br />
         <input ng-click="ctl.submitForm()" type="submit" value="Submit">

@@ -10,6 +10,10 @@ import views.html.*;
 
 import java.io.File;
 
+/**
+ * Handles GET requests for all views as well as error pages.
+ */
+// TODO Switch views from being full pages to being partials
 public class Application extends Controller {
 
   public static final String COMPONENT_VIEWS = "public/app/components/";

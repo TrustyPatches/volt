@@ -8,6 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import core.authentication.VoltRole;
 
+/**
+ * A model representing a user of the Volt application.
+ */
 @Entity
 public class VoltUser extends Model implements User {
 
@@ -29,7 +32,7 @@ public class VoltUser extends Model implements User {
 
   public VoltUser(String email, String password, VoltRole role) {
     this.username = email;
-    this.email = email; // TODO: usernames must be an email (should be made optional)
+    this.email = email; // TODO: right now usernames must be an email (should be made optional)
     this.password = password;
     this.role = role;
     this.chapter = "testchapter";
@@ -37,6 +40,9 @@ public class VoltUser extends Model implements User {
     this.firstName = "Mr Test";
     this.lastName = "McTesterson";
   }
+
+  @Override
+  public String toString() { return getFullName() + ", " + ring + ", " + chapter; }
 
   public String getFullName() {
     return firstName + " " + lastName;

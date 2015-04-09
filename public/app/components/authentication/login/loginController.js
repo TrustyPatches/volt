@@ -11,7 +11,7 @@
         var vm = this;
 
         // Fields
-        vm.formEmail = "";
+        vm.formUsername = "";
         vm.formPassword = "";
         vm.loginReturnValue = false;
 
@@ -20,7 +20,7 @@
         vm.logout = logout;
 
         function submitForm() {
-            $http.post('api/login', { 'email': vm.formEmail, 'password': vm.formPassword })
+            $http.post('api/login', { 'username': vm.formUsername, 'password': vm.formPassword })
                 .success(function(data) {
                     vm.loginReturnValue = data;
                 });
