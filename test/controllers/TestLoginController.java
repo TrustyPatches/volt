@@ -3,17 +3,12 @@ package controllers;
 import static org.fest.assertions.Assertions.assertThat;
 import static play.mvc.Http.Status.OK;
 import static play.test.Helpers.*;
-import controllers.LoginController;
 
-import controllers.routes;
 import org.junit.Test;
 
-import play.api.test.FakeApplication;
 import play.test.WithApplication;
 import play.mvc.Result;
 import play.test.FakeRequest;
-import play.test.Helpers;
-import play.twirl.api.Content;
 
 public class TestLoginController extends WithApplication {
 

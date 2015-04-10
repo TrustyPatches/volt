@@ -29,9 +29,11 @@ public class SignUpController extends Controller {
     String username = body.get("username").asText();
     String password = body.get("password").asText();
 
+    if (username.isEmpty() || password.isEmpty()) { return ok(Json.toJson(false)); }
+
     // TODO: Should check for existing user and do serverside validation
 
     // TODO: Keep signup process up to date with User construction
-    return ok(Json.toJson("Looks good to me!"));
+    return ok(Json.toJson(true));
   }
 }
