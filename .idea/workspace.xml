@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/conf/routes" line="13" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8deb69e3-51f7-4214-a4b3-a3cee9e73bcb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-    </list>
+    <list default="true" id="8deb69e3-51f7-4214-a4b3-a3cee9e73bcb" name="Default" comment="" />
     <ignored path="volt.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,8 +63,8 @@
       <file leaf-file-name="VoltUserController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/VoltUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47534102" vertical-offset="22" max-vertical-offset="975">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.39664218" vertical-offset="22" max-vertical-offset="975">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -811,12 +809,12 @@
       <workItem from="1428248881568" duration="32970000" />
       <workItem from="1428472973631" duration="4710000" />
       <workItem from="1428515019656" duration="13963000" />
-      <workItem from="1428645671882" duration="7770000" />
+      <workItem from="1428645671882" duration="8429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82787000" />
+    <option name="totallyTimeSpent" value="83446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
@@ -1262,8 +1260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/VoltUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47534102" vertical-offset="22" max-vertical-offset="975">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.39664218" vertical-offset="22" max-vertical-offset="975">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
           <folding />
         </state>
       </provider>

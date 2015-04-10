@@ -5,4 +5,7 @@ jdk:
 - oraclejdk8
 node_js:
   - "0.12"
+before_install:
+  - npm update -q
+  - npm install grunt-cli -g
 script: sbt test
