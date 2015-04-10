@@ -1,6 +1,7 @@
 language: scala
 scala:
   - 2.11.1
+sudo: required
 jdk:
 - oraclejdk8
 node_js:

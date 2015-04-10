@@ -5,6 +5,39 @@ angular.module('app', []);
 
     angular
         .module('app')
+        .controller('AdminUserController', AdminUserController);
+
+    AdminUserController.$inject = ['$http'];
+
+    function AdminUserController($http) {
+        var vm = this;
+
+        // Fields
+        vm.userList = [];
+
+        // Functions
+        vm.getUserList = getUserList;
+
+        activate();
+
+        function activate() {
+            getUserList();
+        }
+
+        function getUserList() {
+            $http.get('api/admin/userlist')
+                .success(function (data) {
+                    vm.userList = data;
+                });
+        }
+    }
+})();
+
+(function () {
+    'use strict';
+
+    angular
+        .module('app')
         .controller('LoginController', LoginController);
 
     LoginController.$inject = ['$http'];
@@ -13,7 +46,7 @@ angular.module('app', []);
         var vm = this;
 
         // Fields
-        vm.formEmail = "";
+        vm.formUsername = "";
         vm.formPassword = "";
         vm.loginReturnValue = false;
 
@@ -22,7 +55,7 @@ angular.module('app', []);
         vm.logout = logout;
 
         function submitForm() {
-            $http.post('api/login', { 'email': vm.formEmail, 'password': vm.formPassword })
+            $http.post('api/login', { 'username': vm.formUsername, 'password': vm.formPassword })
                 .success(function(data) {
                     vm.loginReturnValue = data;
                 });
@@ -48,7 +81,7 @@ angular.module('app', []);
         var vm = this;
 
         // Fields
-        vm.formEmail = "";
+        vm.formUsername = "";
         vm.formPassword = "";
         vm.formPasswordRepeat = "";
 
@@ -56,7 +89,7 @@ angular.module('app', []);
         vm.submitForm = submitForm;
 
         function submitForm() {
-            $http.post('api/signup', { 'email': vm.formEmail, 'password': vm.formPassword });
+            $http.post('api/signup', { 'username': vm.formUsername, 'password': vm.formPassword });
         };
     }
 })();
