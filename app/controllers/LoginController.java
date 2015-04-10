@@ -31,7 +31,6 @@ public class LoginController extends Controller {
     String password = body.get("password").asText();
 
     VoltUser u = VoltUser.find.where().eq("username", username).findUnique();
-    System.out.println(u.password);
     if (u != null && u.password.equals(password)) {
       session("username", username);
       return ok(Json.toJson(true));

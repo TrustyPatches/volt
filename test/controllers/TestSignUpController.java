@@ -4,13 +4,13 @@ import static org.fest.assertions.Assertions.assertThat;
 import static play.mvc.Http.Status.OK;
 import static play.test.Helpers.*;
 
-import com.fasterxml.jackson.databind.JsonNode;
-
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.junit.Test;
 import org.junit.Before;
 
+import play.test.FakeApplication;
+import play.test.Helpers;
 import play.test.WithApplication;
 import play.mvc.Result;
 import play.test.FakeRequest;
@@ -24,6 +24,9 @@ public class TestSignUpController extends WithApplication {
   public void onStart() {
     factory = new JsonNodeFactory(true);
     node = factory.objectNode();
+
+    // Does this really access configured h2 database "test" set in application.conf?
+    FakeApplication fake = Helpers.fakeApplication(inMemoryDatabase("test"));
   }
 
   @Test
