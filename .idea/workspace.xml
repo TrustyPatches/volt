@@ -4,12 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/conf/routes" line="13" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8deb69e3-51f7-4214-a4b3-a3cee9e73bcb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LoginController.java" afterPath="$PROJECT_DIR$/app/controllers/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/TestSignUpController.java" afterPath="$PROJECT_DIR$/test/controllers/TestSignUpController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="8deb69e3-51f7-4214-a4b3-a3cee9e73bcb" name="Default" comment="" />
     <ignored path="volt.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,20 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VoltUserController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="VoltUserController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/VoltUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="975">
+            <state vertical-scroll-proportion="0.47534102" vertical-offset="22" max-vertical-offset="975">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSignUpController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestSignUpController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/controllers/TestSignUpController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68205667" vertical-offset="0" max-vertical-offset="1725">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
               <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -814,12 +809,12 @@
       <workItem from="1428248881568" duration="32970000" />
       <workItem from="1428472973631" duration="4710000" />
       <workItem from="1428515019656" duration="13963000" />
-      <workItem from="1428645671882" duration="5670000" />
+      <workItem from="1428645671882" duration="6194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80687000" />
+    <option name="totallyTimeSpent" value="81211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
@@ -1243,14 +1238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/VoltUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="975">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/TestLoginRequests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="1600">
@@ -1263,11 +1250,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/TestSignUpController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68205667" vertical-offset="0" max-vertical-offset="1725">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/VoltUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47534102" vertical-offset="22" max-vertical-offset="975">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
