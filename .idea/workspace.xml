@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/conf/routes" line="13" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8deb69e3-51f7-4214-a4b3-a3cee9e73bcb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-    </list>
+    <list default="true" id="8deb69e3-51f7-4214-a4b3-a3cee9e73bcb" name="Default" comment="" />
     <ignored path="volt.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -811,12 +809,12 @@
       <workItem from="1428248881568" duration="32970000" />
       <workItem from="1428472973631" duration="4710000" />
       <workItem from="1428515019656" duration="13963000" />
-      <workItem from="1428645671882" duration="6427000" />
+      <workItem from="1428645671882" duration="7221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81444000" />
+    <option name="totallyTimeSpent" value="82238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
