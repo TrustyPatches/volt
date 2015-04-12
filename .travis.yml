@@ -4,9 +4,6 @@ scala:
 sudo: required
 jdk:
 - oraclejdk8
-node_js:
-  - "0.12"
-before_install:
-  - npm update -q
-  - npm install grunt-cli -g
 script: sbt test
+before_install:
+  - rm package.json
