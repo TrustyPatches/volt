@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css">
+  </head>
+
+  <body>
+
+    <div ng-controller="SignUpController as ctl">
+      <h3>Register</h3>
+    <form>
+        Email: <br/> <input ng-model="ctl.formUsername" type="text" name="username"> {{ ctl.formUsername }} <br />
+        Password: <br/> <input ng-model="ctl.formPassword" type="text" name="password"><br />
+        Password again: <br /> <input ng-model="ctl.formPasswordRepeat" type="text" name="password-repeat"><br />
+        <input ng-click="ctl.submitForm()" type="submit" value="Submit">
+      </form>
+    </div>
+
+
+    <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/bower_components/angularjs/angular.min.js"></script>
+    <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/app/volt.js"></script>
+    <script>angular.bootstrap(document, ['app']);</script>
+  </body>
+</html>

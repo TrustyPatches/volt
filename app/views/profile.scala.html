@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Profile</title>
+
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.at("bower_components/bootstrap/dist/css/bootstrap.min.css")">
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/main.css")">
+  </head>
+
+  <body>
+
+    <div ng-controller="ProfileController as ctl">
+      <h3>Profile</h3>
+      <div ng-if="!ctl.loggedIn">
+        <p>Please log in.</p>
+      </div>
+      <div ng-if="ctl.loggedIn">
+        <p>You are logged in as: {{ ctl.username }} </p>
+      </div>
+    </div>
+    <div ng-controller="LoginController as ctl">
+      <a ng-click="ctl.logout()" href="#">Logout</a>
+    </div>
+
+
+    <script src="@routes.Assets.at("bower_components/jquery/dist/jquery.min.js")"></script>
+    <script src="@routes.Assets.at("bower_components/angularjs/angular.min.js")"></script>
+    <script src="@routes.Assets.at("bower_components/bootstrap/dist/js/bootstrap.min.js")"></script>
+    <script src="@routes.Assets.at("app/volt.js")"></script>
+    <script>angular.bootstrap(document, ['app']);</script>
+  </body>
+</html>
