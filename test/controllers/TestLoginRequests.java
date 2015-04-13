@@ -55,5 +55,4 @@ public class TestLoginRequests extends WithApplication {
     assertThat(status(result)).isEqualTo(OK);
     assertThat(contentAsString(result).contains("false"));
   }
-
 }
