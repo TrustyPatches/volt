@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8deb69e3-51f7-4214-a4b3-a3cee9e73bcb" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/TestLoginRequests.java" afterPath="$PROJECT_DIR$/test/controllers/TestLoginRequests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LoginController.java" afterPath="$PROJECT_DIR$/app/controllers/LoginController.java" />
     </list>
     <ignored path="volt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,9 +64,11 @@
       <file leaf-file-name="LoginController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.003147954" vertical-offset="797" max-vertical-offset="1750">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.6033578" vertical-offset="0" max-vertical-offset="1925">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,10 +133,10 @@
         <option value="$PROJECT_DIR$/app/core/Global.java" />
         <option value="$PROJECT_DIR$/app/controllers/SignUpController.java" />
         <option value="$PROJECT_DIR$/test/controllers/TestLoginController.java" />
-        <option value="$PROJECT_DIR$/app/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/test/controllers/TestSignUpController.java" />
         <option value="$PROJECT_DIR$/test/controllers/TestLoginRequests.java" />
         <option value="$PROJECT_DIR$/test/controllers/TestLoginInvalidCharacters.java" />
+        <option value="$PROJECT_DIR$/app/controllers/LoginController.java" />
       </list>
     </option>
   </component>
@@ -566,12 +567,12 @@
       <workItem from="1428472973631" duration="4710000" />
       <workItem from="1428515019656" duration="13963000" />
       <workItem from="1428645671882" duration="9147000" />
-      <workItem from="1428904722254" duration="2206000" />
+      <workItem from="1428904722254" duration="2970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86370000" />
+    <option name="totallyTimeSpent" value="87134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
@@ -652,7 +653,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1150">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -704,7 +707,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,9 +1015,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.003147954" vertical-offset="797" max-vertical-offset="1750">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.6033578" vertical-offset="0" max-vertical-offset="1925">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

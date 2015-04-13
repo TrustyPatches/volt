@@ -7,6 +7,7 @@ import play.mvc.*;
 
 import play.mvc.BodyParser;
 import com.fasterxml.jackson.databind.JsonNode;
+import org.apache.commons.lang3.StringEscapeUtils;
 
 /**
  * A controller to handle login requests sent from a client.
